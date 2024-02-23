@@ -27,6 +27,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    opacity: 0;
 }
 .floating-container{
     background-image: linear-gradient(120deg, #ffad14 0%, #fa27a2 100%);
@@ -36,6 +37,30 @@ section{
     width: 20px;
     height: 100vh;
     box-shadow: 0px 10px  15px rgba(22, 7, 51, 0.555);
+    animation: fromLeft 1s    ease-in-out;
+}
+.visible{
+    animation: fromLeft 0.8s  ease-in-out;
+    opacity: 1;
+}
+
+@keyframes fromLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.notVisible{
+    animation: invisible 0.5s  ease-in forwards;
+    opacity: 1;
+}
+@keyframes invisible{
+    0%{opacity: 1}
+    100%{opacity: 0}
 }
 
 #section-floating-title{
@@ -66,6 +91,7 @@ section{
 .reverse{
     transform: skewY(10deg); 
 }
+
 .hero h1{
     display: flex;
     align-items: center;
@@ -328,4 +354,33 @@ form button:hover{
 .cv-button:hover{
     background-color: rgba(133, 1, 133,0.6);
     color: #fff;
+}
+
+.thanks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100vw;
+    height: 100vh;
+}
+.thanks-return{
+    padding: 15px;
+    width: fit-content;
+    border-radius: 10px;
+    color: #f1f1f1;
+    font-weight: 800;
+    font-size: 1rem;
+    background-color: #fa27a2;
+    border: none;
+    box-shadow: 2px 2px 5px #1f1e1e;
+    transition: 0.3s;
+    box-shadow: 3px 3px 1px 2px #f1f1f1;
+    border: 1px solid #f1f1f1;
+
+}
+
+.thanks-return:hover {
+    box-shadow: -3px -3px 1px 2px #f1f1f1;
+    cursor: pointer;
 }
