@@ -29,15 +29,15 @@ section{
     justify-content: center;
 }
 .floating-container{
-    /* background-image: linear-gradient(120deg, #ffad14 0%, #fa27a2 100%);
+    background-image: linear-gradient(120deg, #ffad14 0%, #fa27a2 100%);
     position: fixed;
     top: 0;
-    margin-left: 100px;
     z-index: 1;
-    width: 100px;
-    height: 100vh; */
-
+    width: 20px;
+    height: 100vh;
+    box-shadow: 0px 10px  15px rgba(22, 7, 51, 0.555);
 }
+
 #section-floating-title{
     position: fixed;
     top: 50%;
@@ -54,9 +54,7 @@ section{
     /* font-weight: 900; */
     /* z-index: 2; */
 }
-#about{
-    
-}
+
 .section-divisor{
     margin-block: 500px;
     height:  15px; 
@@ -91,6 +89,8 @@ footer{
     display: flex;
     gap: 20px;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 footer img{
@@ -310,6 +310,8 @@ form button{
     color: whitesmoke;
     padding: 15px;
     width: 20%;
+    font-weight: 700;
+    font-size: 1rem;
 }
 form button:hover{
     box-shadow: rgba(238, 156, 238, 0.4) 2px 5px,
@@ -321,6 +323,7 @@ form button:hover{
     background-color: rgba(75, 7, 75, 0.6);
     border-radius: 10px ;
     padding: 10px 15px;
+
 }
 .cv-button:hover{
     background-color: rgba(133, 1, 133,0.6);

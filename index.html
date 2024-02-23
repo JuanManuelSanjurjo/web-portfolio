@@ -10,7 +10,7 @@
 </head>
 <body id="hero">
     <nav >
-        <h1 > <a href="#hero">Juan Manuel Sanjurjo</a></h1>
+        <h1><a href="#hero">Juan Manuel Sanjurjo</a></h1>
         <ul>
             <li><a href="#about">About me</a></li>
             <li><a href="#education">Education</a></li>
@@ -25,9 +25,8 @@
         </div>
     </nav>
     
-    <div class="floating-container">
-        <div id="section-floating-title"></div>
-    </div>
+    <div class="floating-container"></div>
+    <div id="section-floating-title"></div>
     
     
     <main>
@@ -75,19 +74,19 @@
             <div class="container">
                 <h2>Certificates</h2>
                 <ul class="certificates">
-                    <li><a class="link" href="https://www.freecodecamp.org/certification/Drithmitra/javascript-algorithms-and-data-structures" target="_blank">FreeCodeCamp JavaScript Algorithms and Data Structures</a></li>
-                    <li><a class="link" href="https://www.freecodecamp.org/certification/Drithmitra/responsive-web-design" target="_blank">FreeCodeCamp Responsive Web Design</FreeCodeCamp a></li>
-                        <li title="Some projects are not available in the FreeCodeCamp link, but solutions can be found in the repository">
-                            <a class="link" href="https://www.freecodecamp.org/certification/Drithmitra/front-end-development-libraries" target="_blank">FreeCodeCamp Front End Development Libraries</a></li>
-                            <li title="Some projects are not available in the FreeCodeCamp link, but solutions can be found in the repository">
-                                <a class="link" href="https://www.freecodecamp.org/certification/Drithmitra/relational-database-v8" target="_blank">FreeCodeCamp Relational Database</a></li>
-                                <li title="Some projects are not available in the FreeCodeCamp link, but solutions can be found in the repository">
-                                    <a class="link" href="https://www.freecodecamp.org/certification/Drithmitra/back-end-development-and-apis" target="_blank">FreeCodeCamp Back End Development and APIs</a></li>
-                                    <li><a class="link" href="https://www.freecodecamp.org/certification/Drithmitra/data-analysis-with-python-v7" target="_blank">FreeCodeCamp Data Analysis with Python</a></li>
+                    <li><a name="certificate link" class="link" href="https://www.freecodecamp.org/certification/Drithmitra/javascript-algorithms-and-data-structures" target="_blank">FreeCodeCamp JavaScript Algorithms and Data Structures</a></li>
+                    <li><a name="certificate link" class="link" href="https://www.freecodecamp.org/certification/Drithmitra/responsive-web-design" target="_blank">FreeCodeCamp Responsive Web Design</FreeCodeCamp a></li>
+                    <li title="Some projects are not available in the FreeCodeCamp link, but solutions can be found in the repository">
+                        <a name="certificate link" class="link" href="https://www.freecodecamp.org/certification/Drithmitra/front-end-development-libraries" target="_blank">FreeCodeCamp Front End Development Libraries</a></li>
+                    <li title="Some projects are not available in the FreeCodeCamp link, but solutions can be found in the repository">
+                        <a name="certificate link" class="link" href="https://www.freecodecamp.org/certification/Drithmitra/relational-database-v8" target="_blank">FreeCodeCamp Relational Database</a></li>
+                     <li title="Some projects are not available in the FreeCodeCamp link, but solutions can be found in the repository">
+                        <a name="certificate link" class="link" href="https://www.freecodecamp.org/certification/Drithmitra/back-end-development-and-apis" target="_blank">FreeCodeCamp Back End Development and APIs</a></li>
+                    <li><a name="certificate link" class="link" href="https://www.freecodecamp.org/certification/Drithmitra/data-analysis-with-python-v7" target="_blank">FreeCodeCamp Data Analysis with Python</a></li>
                 </ul>
             </div>
             <div class="container">
-                <h2>LANGUAJES</h2>
+                <h2>LANGUAJES</h2> name="certificate link"
                 <hr>
                 <h3>Spanish <span>- Native</span></h3>
                 <h3>English <span>- <a class="link" href="https://www.efset.org/cert/LA2qHu" target="_blank">C2  EF SET English Certificate 80/100</a></span></h3>
@@ -145,12 +144,12 @@
                     <div >
                         <h3><a class="link"  href="https://github.com/JuanManuelSanjurjo/Chutub" target="_blank">Youtube clone <span class="hidden-link">&#8594; visit github repo and live page</span> </a></h3>
                         <p >Responsive clone of YouTube, using React. It features default tabs filled with content and search functionality. The playback section shows suggested videos and received comments. This a practical demonstration on the use of APIs to fetch and display data in a real-world application.</p>
-                        <iframe src="https://juanmanuelsanjurjo.github.io/Chutub/" frameborder="0"></iframe>
+                        <iframe title="YouTube Clone" src="https://juanmanuelsanjurjo.github.io/Chutub/" frameborder="0"></iframe>
                     </div>
                     <div>
                         <h3><a class="link" href="https://github.com/JuanManuelSanjurjo/Pokedex" target="_blank">Pokedex <span class="hidden-link">&#8594; visit github repo and live page</span></a></h3>
                         <p>Web app developed in React. Uses the PokeAPI to display information about different Pokémon's. The app allows you to search and filter by name or id, view details of each species, and explore their abilities, moves, and more. The responsive layout includes a collapsible side menu for related links.</p>                </div>
-                        <iframe src="https://juanmanuelsanjurjo.github.io/Pokedex/" frameborder="0"></iframe>
+                        <iframe title="Pokedex" src="https://juanmanuelsanjurjo.github.io/Pokedex/" frameborder="0"></iframe>
                         <div>
                             <h3><a class="link" href="https://github.com/JuanManuelSanjurjo?tab=repositories" target="_blank">Next Js Projects <span class="hidden-link">&#8594; visit github repo and live pages</span></a></h3>
                             <p>Several Next 14 projects leveraging new features of the framework like the App Router. Features a (currently in development) portfolio for the artist Melisa Labra, a project following the official Next js Dashboard tutorial, and mockup and CRUD practice projects using jsonplaceholder and other api’s.</p>
@@ -179,8 +178,8 @@
             <h2>CONTACT</h2>
             <!-- <form action="#" id="form"> -->
             <form id="form" action="https://formsubmit.co/juanmanuelsanjurjo@gmail.com" method="POST">
-
-                <label for="email" aria-placeholder="Email"></label>Email
+                <input type="hidden" name="_captcha" value="true">
+                <label for="email"></label>Email
                 <input name="email" id="email" placeholder="Email" type="email" required>
                 <label for="subject"></label>Subject
                 <input name="subject" id="subject" placeholder="Subject" type="text" required>
