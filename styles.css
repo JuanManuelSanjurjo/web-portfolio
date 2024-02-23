@@ -284,6 +284,7 @@ iframe:hover{
 
 .skills *{
     background-color: rgb(80, 1, 80);
+    /* background-color: #fc5078a8; */
     font-size: 1.125rem;
     padding:0px 10px;
     border-radius: 3px;
@@ -329,7 +330,7 @@ form *:focus-within{
 }
 form button{
     margin: 50px auto;
-    background-color: #fa27a2;
+    background-color: #fc5077;
     border: none;
     border-radius: 3px;
     box-shadow:  2px 5px rgba(238, 156, 238, 0.4);
@@ -347,6 +348,7 @@ form button:hover{
 
 .cv-button{
     background-color: rgba(75, 7, 75, 0.6);
+    background-color: #fc5078a8;
     border-radius: 10px ;
     padding: 10px 15px;
 

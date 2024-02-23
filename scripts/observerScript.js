@@ -37,3 +37,29 @@ sections.forEach(section => {
   observer.observe(section);
 });
 
+
+
+// Select form elements
+const emailInput = document.querySelector("#email");
+const subjectInput = document.querySelector("#subject");
+const contentInput = document.querySelector("#content");
+
+// Add event listener to submit button
+const submitBtn = document.getElementById("submitBtn");
+submitBtn.addEventListener("click", () => {
+  // Clear input values
+  if(emailInput.value !== "" || subjectInput.value !== "" || contentInput.value !== ""){
+
+    submitBtn.textContent = "Sending...";
+  }
+  // emailInput.value = "";
+  // subjectInput.value = "";
+  // contentInput.value = "";
+
+  // Change submit button text
+
+  // Perform form submission
+  // submitBtn.submit();
+});
+
+
