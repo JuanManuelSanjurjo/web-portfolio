@@ -9,6 +9,16 @@
 *::selection {
     background-color: #da00bd94;
 }
+body::-webkit-scrollbar {
+    /* display: none; */
+    background-color: #0c1039  ;
+    width: thin;
+      
+}
+::-webkit-scrollbar-thumb {
+    background: #1e2243;
+  }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -478,7 +488,7 @@ form button:hover {
         align-content: center;
         gap: 30px;
         animation: toLeft 0.3s forwards;
-
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
 
     nav ul {
