@@ -543,5 +543,8 @@ form button:hover {
     footer h4 {
         text-align: center;
     }
+    .section-divisor {
+        margin-block: 250px;
+    }
  
 }
