@@ -16,13 +16,13 @@ const onIntersect = (entries) => {
       floatingDiv.textContent = entry.target.id;
       floatingDiv.classList.remove("notVisible");
       floatingDiv.classList.add("visible");
-      entry.target.classList.remove("notVisible");
+      // entry.target.classList.remove("notVisible");
       entry.target.classList.add("visible");
     } else {
       floatingDiv.classList.remove("visible");
       floatingDiv.classList.add("notVisible");
       entry.target.classList.remove("visible");
-      entry.target.classList.add("notVisible");
+      // entry.target.classList.add("notVisible");
     }
   });
 };
